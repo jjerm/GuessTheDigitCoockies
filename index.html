@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Угадай число</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Play" rel="stylesheet"> 
+    <script type="text/javascript" src="cookies.js"></script>
+  </head>
+  <body>
+  	<div class="guess">
+  		<h1>Угадай число</h1>
+
+	    <p>Необходимо ввести число от 1 до 100. Всего дается 10 попыток. Вы увидите подсказку, если число больше или меньше загаданного.</p><br><br>
+
+	    <div class="form">
+	      <label for="guessField">Введите число: </label>
+	      <input type="text" id="guessField" class="guessField">
+	      <input type="submit" value="  Ввод  " class="guessSubmit">
+	    </div>
+
+	    <div class="resultParas">
+	    	<br>
+	      <p class="guesses"></p><br>
+	      <p class="lastResult"></p><br>
+	      <p class="lowOrHi"></p><br>
+	    </div>
+  	</div>    
+  	<div id='results'>
+  	    <h2 align='center'>Таблица рекордов</h2>
+  	    <table border="1" cellspacing="0" cellpadding="5" width="100%" id="tab">
+  	        <tbody id='tab' align='center'>
+  	            <tr align='center'>
+      	            <td><b>Имя</b></td>
+      	            <td><b>Дата</b></td>
+      	            <td><b>Количество попыток</b></td>
+  	            </tr>
+  	        </tbody>
+  	    </table>
+  	</div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
